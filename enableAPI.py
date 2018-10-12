@@ -31,5 +31,7 @@ def main():
         except:
             print("*****Error connecting to %s*****" % hostname)
 
+    print("Process Completed.")
+
 if __name__ == '__main__':
         main()
