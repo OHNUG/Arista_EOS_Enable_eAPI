@@ -4,7 +4,7 @@ from netmiko import ConnectHandler
 
 def main():
     with open('devices.yaml') as deviceYAML:
-    devices = yaml.safe_load(deviceYAML)
+        devices = yaml.safe_load(deviceYAML)
 
     credUser = raw_input("Please enter the username for ssh: ")
     credPass = getpass.getpass("Please enter the password for ssh: ")
