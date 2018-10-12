@@ -1,14 +1,12 @@
 # Arista EOS Enable eAPI
 
-This will take an Arista switch that has SSH Enabled and run the commands
- to enable eAPI.
+This will take an Arista switch that has SSH Enabled and run the commands to enable eAPI.
  
 *Lab Design included in repository.
 
 ### Instructions: 
 
-###### 1 -  Enter your devices and management IP information into YAML. (Note: The Device name is only used for informational
-output in the script and can be whatever you choose.)
+###### 1 -  Enter your devices and management IP information into YAML. (Note: The Device name is only used for informational output in the script and can be whatever you choose.)
 
 Leave "devices" on the first line and indent.
 
