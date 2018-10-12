@@ -5,9 +5,9 @@ This will take an Arista switch that has SSH Enabled and run the commands
  
 *Lab Design included in repository.
 
-###Instructions: 
+### Instructions: 
 
-1 -  Enter your devices and management IP information into YAML. (Note: The Device name is only used for informational
+###### 1 -  Enter your devices and management IP information into YAML. (Note: The Device name is only used for informational
 output in the script and can be whatever you choose.)
 
 Leave "devices" on the first line and indent.
@@ -21,7 +21,7 @@ devices:
  DCA-BL: "10.10.10.203"
 ```
   
-2 - Run the script. It will ask you to enter your credentials using getpass:
+###### 2 - Run the script. It will ask you to enter your credentials using getpass:
 
 ```
 $ python enableAPI.py
@@ -29,7 +29,7 @@ Please enter the username for ssh: admin
 Please enter the password for ssh: *****
 ```
 
-###Result:
+### Result:
 ```
 Establishing connection to DCA-BL...
 Enabling eAPI...
