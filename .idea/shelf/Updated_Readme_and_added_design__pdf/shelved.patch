@@ -1,0 +1,21 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Arista EOS Enable eAPI\n\nThis will take an Arista switch that has SSH Enabled and run the commands\n to enable eAPI.\n \n*Lab Design included in repository.\n###Instructions: \n\n######1 -  Enter your devices and management IP information into YAML. (Note: The Device name is only used for informational\noutput in the script and can be whatever you choose.)\n\nLeave \"devices\" on the first line and indent.\n\n  <br />DCA-Spine1: \"10.10.10.101\"\n  <br />DCA-Spine2: \"10.10.10.102\"\n  <br />DCA-Leaf1: \"10.10.10.201\"\n  <br />DCA-Leaf2: \"10.10.10.202\"\n  <br />DCA-BL: \"10.10.10.203\"\n  \n######2 - Run the script. It will ask you to enter your credentials using getpass:\n\n$ python enableAPI.py\n<br />Please enter the username for ssh: admin\n<br />Please enter the password for ssh: *****\n\n###Result:\n\n<br />Establishing connection to DCA-BL...\n<br />Enabling eAPI...\n<br />eAPI enabled on DCA-BL.\n<br />Establishing connection to DCA-Leaf2...\n<br />Enabling eAPI...\n<br />eAPI enabled on DCA-Leaf2.\n<br />Establishing connection to DCA-Spine1...\n<br />Enabling eAPI...\n<br />eAPI enabled on DCA-Spine1.\n<br />Establishing connection to DCA-Spine2...\n<br />Enabling eAPI...\n<br />eAPI enabled on DCA-Spine2.\n<br />Establishing connection to DCA-Leaf1...\n<br />Enabling eAPI...\n<br />eAPI enabled on DCA-Leaf1.\n<br />Process Completed.\n \nAuthor - Drums090\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- README.md	(revision 5e4e3f295805f25a4ebe8ec0fa41b8ffdb9eaab6)
++++ README.md	(date 1539377565000)
+@@ -19,9 +19,11 @@
+   
+ ######2 - Run the script. It will ask you to enter your credentials using getpass:
+ 
++```
+ $ python enableAPI.py
+ <br />Please enter the username for ssh: admin
+ <br />Please enter the password for ssh: *****
++```
+ 
+ ###Result:
+ 

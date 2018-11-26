@@ -10,8 +10,8 @@ def main():
     credPass = getpass.getpass("Please enter the password for ssh: ")
 
 
-    for hostname, ip in devices['devices'].items():
-        print("Establishing connection to %s..." % hostname)
+    for hostname, ip in devices.items():
+        print("Establishing connection to %s via %s..." % (hostname, ip))
 
         #Establish Connection
         #Try to connect to device, if there is a failure, throw the error and move on
